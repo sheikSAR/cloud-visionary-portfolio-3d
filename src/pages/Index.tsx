@@ -5,6 +5,7 @@ import AboutSection from '../components/AboutSection';
 import SkillsCloud from '../components/SkillsCloud';
 import AchievementsSection from '../components/AchievementsSection';
 import CareerTimeline from '../components/CareerTimeline';
+import CommunitySection from '../components/CommunitySection';
 import ContactSection from '../components/ContactSection';
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
       <SkillsCloud />
       <AchievementsSection />
       <CareerTimeline />
+      <CommunitySection />
       <ContactSection />
     </div>
   );

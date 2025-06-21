@@ -7,37 +7,50 @@ const CareerTimeline = () => {
     {
       year: '2024-Present',
       company: 'HCL Technologies',
-      role: 'Senior Consultant',
-      location: 'Global',
-      description: 'Leading cloud transformation initiatives and data engineering projects'
+      role: 'Senior Consultant, Infrastructure Division',
+      location: 'Global 🌍',
+      description: 'Leading cloud (AWS/Azure), DevOps & data-engineering initiatives. Designing scalable, secure infrastructures and CI/CD pipelines',
+      highlights: ['Cloud Architecture', 'DevOps Pipelines', 'Data Engineering']
     },
     {
       year: '2020-2024',
       company: 'UST Global',
-      role: 'Tech Specialist',
-      location: 'USA',
-      description: 'Specialized in AWS cloud solutions and DevOps implementation'
+      role: 'Technology Specialist',
+      location: 'USA 🇺🇸',
+      description: 'Built enterprise solutions; focused on cloud-native and integration projects',
+      highlights: ['Enterprise Solutions', 'Cloud-Native', 'Integration']
     },
     {
       year: '2018-2020',
       company: 'Royal Bank of Scotland',
-      role: 'Project Lead',
-      location: 'Europe',
-      description: 'Led enterprise data migration and cloud adoption projects'
+      role: 'Project Team Lead',
+      location: 'Europe 🇪🇺',
+      description: 'Managed and delivered banking applications. Coordinated cross-functional teams across regions',
+      highlights: ['Banking Applications', 'Team Leadership', 'Cross-Regional Coordination']
     },
     {
-      year: '2015-2018',
+      year: '2016-2018',
       company: 'IBM',
-      role: 'Solutions Architect',
-      location: 'Germany',
-      description: 'Designed and implemented enterprise cloud solutions'
+      role: 'Application Developer',
+      location: 'Germany 🇩🇪',
+      description: 'Developed client-specific applications. Modernized legacy systems and optimized backend logic',
+      highlights: ['Application Development', 'Legacy Modernization', 'Backend Optimization']
     },
     {
-      year: '2012-2015',
-      company: 'Technosoft',
-      role: 'Senior Developer',
-      location: 'USA',
-      description: 'Developed scalable applications and data processing systems'
+      year: '2014-2016',
+      company: 'Technosoft Corporation',
+      role: 'Application Developer',
+      location: 'USA 🇺🇸',
+      description: 'End-to-end development using Java and Oracle. Introduced automation through DevOps best practices',
+      highlights: ['Java Development', 'Oracle', 'DevOps Automation']
+    },
+    {
+      year: '2012-2014',
+      company: 'Zolon Tech Inc.',
+      role: 'Software Consultant',
+      location: 'Washington DC, USA 🇺🇸',
+      description: 'Worked on large-scale government and enterprise IT projects. Designed secure architectures and provided software integration solutions',
+      highlights: ['Government Projects', 'Secure Architecture', 'Software Integration']
     }
   ];
 
@@ -78,6 +91,18 @@ const CareerTimeline = () => {
                   <h4 className="text-lg text-purple-300">{item.company}</h4>
                   <p className="text-gray-300 text-sm mt-1">{item.location}</p>
                   <p className="text-gray-400 mt-3">{item.description}</p>
+                  
+                  {/* Highlights */}
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {item.highlights.map((highlight, hIndex) => (
+                      <span
+                        key={hIndex}
+                        className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs font-medium"
+                      >
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>
