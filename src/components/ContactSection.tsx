@@ -75,12 +75,131 @@ const ContactSection = () => {
           ))}
         </div>
 
-        {/* Enhanced WhatsApp Contact Button */}
+        {/* BroskiesHub Branding Section */}
+        <motion.div
+          className="broskieshub-footer mt-16 text-center py-8 relative z-50 border-t border-white/10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Logo placeholder - you can replace with actual logo */}
+            <motion.div
+              className="h-12 w-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg shadow-lg flex items-center justify-center"
+              whileHover={{ 
+                scale: 1.1,
+                rotate: 5,
+                boxShadow: "0 0 20px rgba(59, 130, 246, 0.5)"
+              }}
+              transition={{ duration: 0.3 }}
+            >
+              <span className="text-white font-bold text-lg">BH</span>
+            </motion.div>
+            
+            <div className="text-gray-300 text-sm sm:text-base font-medium text-center sm:text-left">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                viewport={{ once: true }}
+              >
+                Developed with{' '}
+                <motion.span
+                  className="text-blue-400 inline-block"
+                  animate={{
+                    scale: [1, 1.2, 1],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                >
+                  💙
+                </motion.span>{' '}
+                by <strong className="text-white bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">BroskiesHub</strong>
+              </motion.div>
+              <motion.div
+                className="text-xs italic text-gray-400 mt-2"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 1 }}
+                viewport={{ once: true }}
+              >
+                We craft human-centric digital experiences and custom cloud-based platforms.
+              </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Website Link */}
+          <motion.div
+            className="mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            viewport={{ once: true }}
+          >
+            <motion.a
+              href="https://broskieshub.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors duration-300 text-lg font-medium"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link className="w-5 h-5" />
+              broskieshub.com
+            </motion.a>
+          </motion.div>
+
+          {/* Floating 3D elements */}
+          <div className="absolute top-0 left-1/4 opacity-20">
+            <motion.span
+              className="text-3xl block"
+              animate={{
+                y: [0, -10, 0],
+                rotate: [0, 5, -5, 0],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              ☁️
+            </motion.span>
+          </div>
+          
+          <div className="absolute top-0 right-1/4 opacity-20">
+            <motion.span
+              className="text-2xl block"
+              animate={{
+                y: [0, -8, 0],
+                rotate: [0, -5, 5, 0],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.5
+              }}
+            >
+              📱
+            </motion.span>
+          </div>
+        </motion.div>
+
+        {/* Enhanced WhatsApp Contact Button - moved below branding */}
         <motion.div
           className="contact-action text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 1.4 }}
           viewport={{ once: true }}
         >
           <motion.a
@@ -144,110 +263,12 @@ const ContactSection = () => {
             </motion.button>
           </motion.a>
         </motion.div>
-
-        {/* BroskiesHub Branding Section */}
-        <motion.div
-          className="broskieshub-footer mt-16 text-center py-8 relative z-50 border-t border-white/10"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <motion.div
-            className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-          >
-            {/* Logo placeholder - you can replace with actual logo */}
-            <motion.div
-              className="h-12 w-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg shadow-lg flex items-center justify-center"
-              whileHover={{ 
-                scale: 1.1,
-                rotate: 5,
-                boxShadow: "0 0 20px rgba(59, 130, 246, 0.5)"
-              }}
-              transition={{ duration: 0.3 }}
-            >
-              <span className="text-white font-bold text-lg">BH</span>
-            </motion.div>
-            
-            <div className="text-gray-300 text-sm sm:text-base font-medium text-center sm:text-left">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 1 }}
-                viewport={{ once: true }}
-              >
-                Developed with{' '}
-                <motion.span
-                  className="text-blue-400 inline-block"
-                  animate={{
-                    scale: [1, 1.2, 1],
-                  }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                >
-                  💙
-                </motion.span>{' '}
-                by <strong className="text-white bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">BroskiesHub</strong>
-              </motion.div>
-              <motion.div
-                className="text-xs italic text-gray-400 mt-2"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 1.2 }}
-                viewport={{ once: true }}
-              >
-                We craft human-centric digital experiences and custom cloud-based platforms.
-              </motion.div>
-            </div>
-          </motion.div>
-
-          {/* Floating 3D elements */}
-          <div className="absolute top-0 left-1/4 opacity-20">
-            <motion.span
-              className="text-3xl block"
-              animate={{
-                y: [0, -10, 0],
-                rotate: [0, 5, -5, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              ☁️
-            </motion.span>
-          </div>
-          
-          <div className="absolute top-0 right-1/4 opacity-20">
-            <motion.span
-              className="text-2xl block"
-              animate={{
-                y: [0, -8, 0],
-                rotate: [0, -5, 5, 0],
-              }}
-              transition={{
-                duration: 2.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.5
-              }}
-            >
-              📱
-            </motion.span>
-          </div>
-        </motion.div>
         
         <motion.div
           className="mt-8 text-gray-400 text-sm"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1 }}
+          transition={{ duration: 0.8, delay: 1.6 }}
           viewport={{ once: true }}
         >
           <p>© 2024 Maheswarakumar Muthusamy. Empowering digital transformation worldwide.</p>
