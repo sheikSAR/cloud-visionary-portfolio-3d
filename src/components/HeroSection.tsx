@@ -25,7 +25,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400">
-            Maheswarakumar
+            Maheswarakumar Muthusamy
           </h1>
           <motion.p
             className="text-xl md:text-2xl mb-4 text-blue-200"

@@ -32,7 +32,7 @@ const SkillsCloud = () => {
         >
           Skills & Expertise
         </motion.h2>
-        
+
         <div className="relative">
           <div className="flex flex-wrap justify-center gap-6">
             {skills.map((skill, index) => (

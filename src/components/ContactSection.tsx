@@ -25,7 +25,7 @@ const ContactSection = () => {
     },
     {
       icon: Link,
-      label: 'Portfolio',
+      label: 'Linktr',
       value: 'linktr.ee/maheswarakumar',
       href: 'https://linktr.ee/maheswarakumar'
     }
@@ -271,7 +271,7 @@ const ContactSection = () => {
           transition={{ duration: 0.8, delay: 1.6 }}
           viewport={{ once: true }}
         >
-          <p>© 2024 Maheswarakumar Muthusamy. Empowering digital transformation worldwide.</p>
+          <p>© 2025 Maheswarakumar Muthusamy. Empowering digital transformation worldwide.</p>
         </motion.div>
       </div>
     </section>

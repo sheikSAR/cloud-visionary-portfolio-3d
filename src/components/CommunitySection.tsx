@@ -6,18 +6,6 @@ import { Users, Award, Flag, Youtube } from 'lucide-react';
 const CommunitySection = () => {
   const communityWork = [
     {
-      title: 'AWS User Group Madurai',
-      role: 'Founder & Organizer',
-      period: 'Jan 2022 – Present',
-      description: 'Leading the local AWS community with workshops and technical sessions',
-      icon: Users,
-      highlights: [
-        'Bilingual AWS EC2 session (English-Tamil) - International Women\'s Day 2022',
-        'Deep-dive sessions on AWS QuickSight, Athena & Redshift',
-        'Informatica Intelligent Cloud Services (IICS) workshops'
-      ]
-    },
-    {
       title: 'GDG Madurai',
       role: 'Volunteer',
       period: '2023 – Present',
@@ -49,13 +37,12 @@ const CommunitySection = () => {
       icon: Flag,
       highlights: [
         '"Journey with Alibaba Cloud Computing" at Madurai Kamaraj University',
-        'AWS College Champ Workshop (Amazon Q) - Feb 2025',
         'Agentic AI with Google - May 2025'
       ]
     },
     {
       title: 'Hackathons & Community Events',
-      role: 'Volunteer & Participant',
+      role: 'Jury member, Volunteer & Participant',
       period: '2022 – Present',
       description: 'Active participation in tech community events and hackathons',
       icon: Award,
@@ -64,11 +51,21 @@ const CommunitySection = () => {
         'Speaker at Cloud and DevOps Seminars',
         'Community contributor across multiple tech events'
       ]
+    },
+    {
+      title: 'AWS User Group Madurai',
+      role: 'Founder & Organizer',
+      period: '2022 – 2023',
+      description: 'Leading the local AWS community with workshops and technical sessions',
+      icon: Users,
+      highlights: [
+        'Deep-dive sessions on AWS QuickSight',
+        'Informatica Intelligent Cloud Services (IICS) workshops'
+      ]
     }
   ];
 
   const achievements = [
-    '🏆 Led first bilingual AWS talk (Tamil + English)',
     '🌍 Worked on cloud consulting in USA, Germany, and India',
     '📢 Speaker at major cloud events and university workshops',
     '🎓 Bridge between enterprise innovation and academic inspiration'
@@ -155,7 +152,7 @@ const CommunitySection = () => {
         >
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 max-w-3xl mx-auto">
             <blockquote className="text-xl text-blue-200 italic mb-4">
-              "From building government-grade IT systems in Washington DC to leading modern cloud transformations, 
+              "Leading modern cloud transformations, 
               I combine global experience with grassroots tech education. My commitment to inclusive education—seen 
               in bilingual AWS workshops—makes me a bridge between enterprise innovation and academic inspiration."
             </blockquote>

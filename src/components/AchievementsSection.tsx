@@ -5,15 +5,15 @@ import { motion } from 'framer-motion';
 const AchievementsSection = () => {
   const achievements = [
     {
-      title: 'AWS Solutions Architect',
-      subtitle: 'Professional',
-      icon: '🏆',
+      title: 'AWS Community Builder',
+      subtitle: 'Community Builder',
+      icon: '☁️',
       color: 'from-orange-400 to-orange-600'
     },
     {
-      title: 'AWS Community Builder',
-      subtitle: 'Community Recognition',
-      icon: '🌟',
+      title: 'AWS Solutions Architect',
+      subtitle: 'Professional',
+      icon: '🏆',
       color: 'from-orange-400 to-orange-600'
     },
     {
