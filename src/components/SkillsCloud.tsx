@@ -9,7 +9,7 @@ const SkillsCloud = () => {
     { name: 'Microsoft Azure', level: 'Certified', color: 'from-cyan-400 to-cyan-600' },
     { name: 'DevOps', level: 'Expert', color: 'from-green-400 to-green-600' },
     { name: 'Jenkins', level: 'Advanced', color: 'from-red-400 to-red-600' },
-    { name: 'Python', level: 'Expert', color: 'from-yellow-400 to-yellow-600' },
+    { name: 'Unix', level: 'Expert', color: 'from-yellow-400 to-yellow-600' },
     { name: 'Java', level: 'Certified', color: 'from-purple-400 to-purple-600' },
     { name: 'Data Engineering', level: 'Specialist', color: 'from-pink-400 to-pink-600' },
     { name: 'Informatica', level: 'Expert', color: 'from-indigo-400 to-indigo-600' },

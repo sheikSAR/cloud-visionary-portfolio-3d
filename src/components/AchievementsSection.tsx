@@ -11,6 +11,12 @@ const AchievementsSection = () => {
       color: 'from-orange-400 to-orange-600'
     },
     {
+      title: 'AWS Community Builder',
+      subtitle: 'Community Recognition',
+      icon: '🌟',
+      color: 'from-orange-400 to-orange-600'
+    },
+    {
       title: 'Alibaba Cloud MVP',
       subtitle: 'Most Valuable Professional',
       icon: '🌟',

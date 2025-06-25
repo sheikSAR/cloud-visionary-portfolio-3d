@@ -18,6 +18,30 @@ const CommunitySection = () => {
       ]
     },
     {
+      title: 'GDG Madurai',
+      role: 'Volunteer',
+      period: '2023 – Present',
+      description: 'Volunteer in the community events organised by GDG Madurai',
+      icon: Users,
+      highlights: [
+        'Active participation in Google Developer Group events',
+        'Supporting community-driven tech initiatives',
+        'Contributing to developer ecosystem growth'
+      ]
+    },
+    {
+      title: 'Madurai Tech Community',
+      role: 'Volunteer',
+      period: '2022 – Present',
+      description: 'Volunteer in the local madurai tech community',
+      icon: Users,
+      highlights: [
+        'Supporting local tech meetups and events',
+        'Fostering tech community growth in Madurai',
+        'Connecting developers and tech enthusiasts'
+      ]
+    },
+    {
       title: 'University & Public Workshops',
       role: 'Speaker & Educator',
       period: '2021 – Present',

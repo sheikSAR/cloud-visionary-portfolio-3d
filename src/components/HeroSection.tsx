@@ -2,6 +2,7 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { motion } from 'framer-motion';
+import ReactCountryFlag from "react-country-flag";
 import CloudParticles from './CloudParticles';
 
 const HeroSection = () => {
@@ -50,11 +51,13 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 2 }}
         >
-          <span title="English">🇬🇧</span>
-          <span title="German">🇩🇪</span>
-          <span title="Italian">🇮🇹</span>
-          <span title="Indian">🇮🇳</span>
-          <span title="Tajik">🇹🇯</span>
+          <ReactCountryFlag countryCode="DE" svg style={{ width: '2em', height: '2em' }} title="Germany" />
+          <ReactCountryFlag countryCode="DK" svg style={{ width: '2em', height: '2em' }} title="Denmark" />
+          <ReactCountryFlag countryCode="CH" svg style={{ width: '2em', height: '2em' }} title="Switzerland" />
+          <ReactCountryFlag countryCode="US" svg style={{ width: '2em', height: '2em' }} title="USA" />
+          <ReactCountryFlag countryCode="IN" svg style={{ width: '2em', height: '2em' }} title="India" />
+          <ReactCountryFlag countryCode="IT" svg style={{ width: '2em', height: '2em' }} title="Italy" />
+          <ReactCountryFlag countryCode="SA" svg style={{ width: '2em', height: '2em' }} title="Saudi Arabia" />
         </motion.div>
       </div>
       

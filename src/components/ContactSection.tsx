@@ -8,8 +8,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'muthukumarusa@gmail.com',
-      href: 'mailto:muthukumarusa@gmail.com'
+      value: 'mahesmk77@gmail.com',
+      href: 'mailto:mahesmk77@gmail.com'
     },
     {
       icon: Phone,
@@ -203,7 +203,7 @@ const ContactSection = () => {
           viewport={{ once: true }}
         >
           <motion.a
-            href="https://wa.me/message/K7OFUFNPEVJ4M1"
+            href="https://wa.me/message/LZACG2ANOP7PP1"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
